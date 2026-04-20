@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenWave - Video UI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="icon-btn" id="menuBtn" aria-label="Toggle sidebar">☰</button>
+      <div class="brand">
+        <span class="brand-mark">▶</span>
+        <span class="brand-text">OpenWave</span>
+      </div>
+    </div>
+
+    <form class="search-wrap" id="searchForm">
+      <input id="searchInput" type="text" placeholder="Search videos" />
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+
+    <div class="topbar-right">
+      <button class="icon-btn" aria-label="Create">＋</button>
+      <button class="icon-btn" aria-label="Notifications">🔔</button>
+      <button class="avatar" aria-label="Profile">OW</button>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <nav>
+        <a href="#" class="nav-item active">Home</a>
+        <a href="#" class="nav-item">Shorts</a>
+        <a href="#" class="nav-item">Subscriptions</a>
+        <a href="#" class="nav-item">Library</a>
+        <a href="#" class="nav-item">History</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section class="chips" id="chips">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="music">Music</button>
+        <button class="chip" data-filter="coding">Coding</button>
+        <button class="chip" data-filter="travel">Travel</button>
+        <button class="chip" data-filter="gaming">Gaming</button>
+      </section>
+
+      <section class="video-grid" id="videoGrid">
+        <article class="video-card" data-category="coding" data-title="Build a Todo App with Vanilla JavaScript">
+          <div class="thumb"></div>
+          <div class="video-meta">
+            <div class="channel-dot"></div>
+            <div>
+              <h3>Build a Todo App with Vanilla JavaScript</h3>
+              <p>CodeSprint</p>
+              <p>218K views · 1 month ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card" data-category="music" data-title="Lo-fi Beats to Focus Better">
+          <div class="thumb alt-a"></div>
+          <div class="video-meta">
+            <div class="channel-dot"></div>
+            <div>
+              <h3>Lo-fi Beats to Focus Better</h3>
+              <p>NightRoom</p>
+              <p>1.8M views · 2 weeks ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card" data-category="travel" data-title="48 Hours in Tokyo - Cinematic Guide">
+          <div class="thumb alt-b"></div>
+          <div class="video-meta">
+            <div class="channel-dot"></div>
+            <div>
+              <h3>48 Hours in Tokyo - Cinematic Guide</h3>
+              <p>RoamStory</p>
+              <p>460K views · 3 days ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card" data-category="gaming" data-title="Top 10 Boss Fights Ranked">
+          <div class="thumb alt-c"></div>
+          <div class="video-meta">
+            <div class="channel-dot"></div>
+            <div>
+              <h3>Top 10 Boss Fights Ranked</h3>
+              <p>PixelPilot</p>
+              <p>720K views · 4 months ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card" data-category="coding" data-title="CSS Grid in 15 Minutes">
+          <div class="thumb alt-d"></div>
+          <div class="video-meta">
+            <div class="channel-dot"></div>
+            <div>
+              <h3>CSS Grid in 15 Minutes</h3>
+              <p>DevQuick</p>
+              <p>98K views · 5 days ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="video-card" data-category="music" data-title="Acoustic Covers for Sunday Morning">
+          <div class="thumb alt-e"></div>
+          <div class="video-meta">
+            <div class="channel-dot"></div>
+            <div>
+              <h3>Acoustic Covers for Sunday Morning</h3>
+              <p>Golden Strings</p>
+              <p>320K views · 1 year ago</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
